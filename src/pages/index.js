@@ -16,6 +16,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
+        <h4>{data.allMarkdownRemark.totalCount} Posts ( Sorted by Date )</h4>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -32,6 +33,7 @@ class BlogIndex extends React.Component {
                 </h3>
                 <small>{node.frontmatter.date}</small>
               </header>
+              
               <section>
                 <p
                   dangerouslySetInnerHTML={{
@@ -39,6 +41,7 @@ class BlogIndex extends React.Component {
                   }}
                 />
               </section>
+              
             </article>
           )
         })}
@@ -57,6 +60,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
       edges {
         node {
           excerpt
