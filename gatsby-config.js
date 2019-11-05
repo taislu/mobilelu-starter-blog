@@ -3,7 +3,7 @@ module.exports = {
     title: `MobileLu Starter Blog`,
     author: `Tai Lu ( 呂台生 )`,
     description: `A starter blog demonstrating what MobileLu can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://mobilelu-starter-blog.netlify.com/`,
     social: {
       twitter: `taislu`,
     },
