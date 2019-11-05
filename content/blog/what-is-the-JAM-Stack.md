@@ -4,6 +4,9 @@ date: "2019-11-05"
 description: You may have already seen or worked on a JAMstack site! They do not have to include all attributes of JavaScript, APIs, and Markup. They might be built using by hand, or with Jekyll, Hugo, Nuxt, Next, Gatsby, or another static site generator...
 ---
 
+<a href=" https://jamstack.org/"
+     target="_blank">Source : Create fast and secure sites and dynamic apps without web servers</a>
+
 A modern architecture —
 Create fast and secure sites and dynamic apps with <strong>JavaScrip</strong>, <strong>APIs</strong>, and prerendered <strong>Markup</strong>, served without web servers. When we talk about “The Stack,” we no longer talk about operating systems, specific web servers, backend programming languages, or databases.
 
