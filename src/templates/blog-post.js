@@ -20,14 +20,14 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <h1
+            <h3
               style={{
                 marginTop: rhythm(1),
                 marginBottom: 0,
               }}
             >
               {post.frontmatter.title}
-            </h1>
+            </h3>
             <p
               style={{
                 ...scale(-1 / 5),
