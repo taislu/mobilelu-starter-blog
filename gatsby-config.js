@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MobileLu Starter Blog`,
+    title: `Starter Blog`,
     author: `Tai Lu ( 呂台生 )`,
     description: `A starter blog demonstrating what MobileLu can do.`,
     siteUrl: `https://mobilelu-starter-blog.netlify.com/`,
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Starter Blog`,
+        short_name: `Starter Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
