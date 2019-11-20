@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Starter Blog`,
+    title: `Posting`,
     author: `Tai Lu ( 呂台生 )`,
     description: `A starter blog demonstrating what MobileLu can do.`,
     siteUrl: `https://mobilelu-starter-blog.netlify.com/`,

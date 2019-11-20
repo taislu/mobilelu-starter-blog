@@ -16,7 +16,13 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        <h4>{data.allMarkdownRemark.totalCount} Posts ( Sorted by Date )</h4>
+      
+        <h3>
+          <Link to="/posts-by-category">By Category</Link>
+          {/* 
+          {data.allMarkdownRemark.totalCount} Posts ( Sorted by Date )
+          */}
+        </h3>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
