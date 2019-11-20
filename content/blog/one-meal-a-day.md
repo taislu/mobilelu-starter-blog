@@ -2,6 +2,7 @@
 title: "一日只一餐「飢餓醫師」劉乂鳴"
 date: "2019-11-16"
 description: Seven meals for a week & Enjoy hunger with ultimate health
+category: 中文
 ---
 
 <iframe width="220" height="110" src="https://www.youtube.com/embed/T6Zi3nwlY8c" frameborder="0" allowfullscreen></iframe>

@@ -2,6 +2,7 @@
 title: "Team Building Exercise - Human Knot"
 date: "2019-11-15"
 description: Use the Human Knot as an icebreaker to build communication, collaboration, critical thinking, and creativity. 
+category: Fun
 ---
 
 <strong>Example-1</strong>
