@@ -2,6 +2,7 @@
 title: "Building your portfolio site with Gatsby "
 date: "2019-11-11"
 description: Your portfolio is your resume, business card, first impression, a place to learn & experiment, and a place where you can show off.
+category: Gatsby
 ---
 
 <strong>Building your portfolio site with Gatsby</strong>

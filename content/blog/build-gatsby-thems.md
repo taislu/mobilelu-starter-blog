@@ -1,7 +1,8 @@
 ---
 title: "Build a Gatsby Theme"
 date: "2019-11-12"
-description: Gatsby Themes are the Next Big Thing™ for building web sites and apps. 
+description: Gatsby Themes are the Next Big Thing™ for building web sites and apps.
+category: Gatsby 
 ---
 
 Gatsby Themes are the Next Big Thing™ for building web sites and apps. In this stream, [John Otander](https://twitter.com/4lpine) teaches [Jason Lengstorf](https://twitter.com/jlengstorf) how to build a Gatsby theme from scratch, how to use it, and how to create child themes. 

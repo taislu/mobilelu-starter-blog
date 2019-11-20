@@ -2,6 +2,7 @@
 title: "Bootstrap Spacing : how it works"
 date: "2019-11-06"
 description: Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.
+category: CSS
 ---
 
 <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/"

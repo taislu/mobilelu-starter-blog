@@ -2,6 +2,7 @@
 title: "Learn about what's new in Gatsby and what the future looks like!"
 date: "2019-09-30"
 description: Keynote speech by Kyle Mathews, CEO and co-founder of Gatsby, from the Gatsby Days London conference on Sept. 30th, 2019 at the Congress Centre. 
+category: Gatsby
 ---
 
 Keynote speech by Kyle Mathews, CEO and co-founder of Gatsby, from the Gatsby Days London conference on Sept. 30th, 2019 at the Congress Centre. 

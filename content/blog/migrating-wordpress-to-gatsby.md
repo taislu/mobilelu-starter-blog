@@ -2,6 +2,7 @@
 title: "Migrating from WordPress to Gatsby"
 date: "2019-11-09"
 description: For the past four years, the blog had been running on WordPress. It was as fast, as custom, and as free of plugins as I could possibly make it, but WordPress is cumbersome, and there’s only so fast and pleasant to use you can make it.
+category: Gatsby
 ---
 
 <a href="https://www.gatsbyjs.org/blog/2019-03-21-migrating-from-wordpress-to-gatsby/"

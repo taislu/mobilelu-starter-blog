@@ -2,6 +2,7 @@
 title: "如何創造自己的好運(上)"
 date: "2019-11-04"
 description: Dr. Hsu 許醫師鑽研新時代思想20幾年，尤偏愛賽斯；同時從事身心靈整體健康研究，對於癌症的治療及預防復發上有獨到心得。
+category: 中文
 ---
 
 <iframe width="220" height="110" src="https://www.youtube.com/embed/xcOxp7GS7zw" frameborder="0" allowfullscreen></iframe>

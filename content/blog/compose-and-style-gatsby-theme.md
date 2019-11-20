@@ -2,6 +2,7 @@
 title: "Composing and styling Gatsby themes"
 date: "2019-11-14"
 description: Gatsby themes open up a lot of incredible opportunities, and theme-ui might just be the perfect tool for making themes composable, interoperable, and even more powerful. 
+category: Gatsby
 ---
 
 Gatsby themes open up a lot of incredible opportunities, and theme-ui might just be the perfect tool for making themes composable, interoperable, and even more powerful. [Brent Jackson](https://twitter.com/jxnblk) will teach us how to build even better Gatsby themes with theme-ui! 

@@ -2,6 +2,7 @@
 title: "What is JSX Pragma"
 date: "2019-11-14"
 description: A pragma is a compiler directive. It tells the compiler how it should handle the contents of a file. JSX syntax on its own isn’t readable by the browser. In order to ship something readable to the browser, JSX needs to be converted to plain JavaScript.
+category: Gatsby
 ---
 
 <a href="https://www.gatsbyjs.org/blog/2019-08-02-what-is-jsx-pragma/"

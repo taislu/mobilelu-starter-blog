@@ -1,7 +1,8 @@
 ---
 title: "WordPress Tutorial for Beginners"
 date: "2019-11-08"
-description: Learn how to make a PROFESSIONAL website with WordPress, step by step! 
+description: Learn how to make a PROFESSIONAL website with WordPress, step by step!
+category: WordPress 
 ---
 
 <strong>Why use WordPress?</strong>
