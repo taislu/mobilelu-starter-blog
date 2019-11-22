@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Posting`,
     author: `Tai Lu ( 呂台生 )`,
-    description: `A starter blog demonstrating what MobileLu can do.`,
+    description: `A starter website demonstrating what taislu can do.`,
     siteUrl: `https://mobilelu-starter-blog.netlify.com/`,
     social: {
       twitter: `taislu`,
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Starter Blog`,
-        short_name: `Starter Blog`,
+        name: `Starter Website`,
+        short_name: `Starter Website`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -66,6 +66,13 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {

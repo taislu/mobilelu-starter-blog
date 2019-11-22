@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+import NavLayout from '../components/NavLayout'
+
 const getCategories = items => {
     let tempItems = items.map(items => { // populate all categories into an array
       return items.node.frontmatter.category;
@@ -71,6 +73,7 @@ handleItems = category => {
     
 
     return (
+      <NavLayout>
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
@@ -124,6 +127,7 @@ handleItems = category => {
           )
         })}
       </Layout>
+      </NavLayout>
     )
   }
 }

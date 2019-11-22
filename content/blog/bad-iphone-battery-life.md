@@ -2,7 +2,7 @@
 title: "Bad iPhone battery life?"
 date: "2019-11-07"
 description: Your iPhone running iOS 13.2 experiencing poor battery life? Has your battery gone from great to terrible? Here's what you need to know to diagnose and fix the problem.
-category: Misc
+category: Useful
 ---
 
 Your iPhone running iOS 13.2 experiencing poor battery life? Has your battery gone from great to terrible? Here's what you need to know to diagnose and fix the problem.
