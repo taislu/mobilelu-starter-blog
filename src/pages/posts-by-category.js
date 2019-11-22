@@ -39,7 +39,8 @@ constructor(props) {
     this.state = {
         items: [], // used for all categories
         postItems: [], // used for filtered category
-        categories: []
+        categories: [],
+        category: "All"
     };
 }
 
@@ -63,13 +64,19 @@ handleItems = category => {
 
     if (category === "All") {
       this.setState(() => {
-        return { postItems: tempItems };
+        return { 
+          postItems: tempItems,
+          category 
+        };
       });
     } else {
 
       let items = tempItems.filter(({ node }) => node.frontmatter.category === category);
       this.setState(() => {
-        return { postItems: items };
+        return { 
+          postItems: items,
+          category
+        };
       });
     }
   };
@@ -91,15 +98,16 @@ handleItems = category => {
         <SEO title="All posts" />
         <Bio />
         
-                {this.state.categories.map((category, index) => {
+                { this.state.categories.map((category, index) => {
+                  
+                  let fill = ! (category === this.state.category)
+                  
                   return (
-                    <Button primary
+                    <Button primary={fill}
                       key={index}
-                      
                       onClick={() => {
                         this.handleItems(category);
                       }}
-                      
                     >
                       {category}
                     </Button>
