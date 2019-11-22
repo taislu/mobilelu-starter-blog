@@ -4,6 +4,8 @@ import SEO from '../components/seo'
 import { PageHeader, Banner } from '../utils'
 import img from '../images/aboutTLU.jpeg'
 
+import OurMission from "../info/our_mission"
+
 export default function about() {
   return (
     <NavLayout>
@@ -11,6 +13,7 @@ export default function about() {
       <PageHeader img={img}>
         <Banner title="about us" subtitle="a little about us" />
       </PageHeader>
+      <OurMission />
     </NavLayout>
   )
 }
