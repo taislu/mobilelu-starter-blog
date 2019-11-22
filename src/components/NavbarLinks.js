@@ -65,7 +65,7 @@ const LinkWrapper = styled.ul`
     }
   }
   //
-  height: ${props => (props.open ? '152px' : '0px')};
+  height: ${props => (props.open ? '222px' : '0px')};
   overflow: hidden;
   ${styles.transObject({ time: '1s' })};
   //
