@@ -17,8 +17,13 @@ const IndexHeader = styled.header`
   justify-content: center;
   align-items: center;
 `
-const DefaultHeader = styled(IndexHeader)`
+//const DefaultHeader = styled(IndexHeader)`
+const DefaultHeader = styled.header`
   min-height: 60vh;
+  background: url(${props => props.img}) center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 HomeHeader.defaultProps = {
