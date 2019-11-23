@@ -19,8 +19,8 @@ const IndexHeader = styled.header`
 `
 //const DefaultHeader = styled(IndexHeader)`
 const DefaultHeader = styled.header`
-  min-height: 60vh;
-  background: url(${props => props.img}) center/cover fixed no-repeat;
+  min-height: 65vh;
+  background: url(${props => props.img}) center/cover fixed;
   display: flex;
   justify-content: center;
   align-items: center;
