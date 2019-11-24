@@ -5,6 +5,8 @@ description: CSS name-to-hex mapping
 category: CSS
 ---
 
+[HTML Color Codes](https://htmlcolorcodes.com/color-names/)
+
 <a href="https://github.com/bahamas10/css-color-names/blob/master/css-color-names.json"
      target="_blank">Source : CSS Color Names in JSON</a>
 

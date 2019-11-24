@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaTwitter, FaFacebook, FaGithub } from 'react-icons/fa'
 import styled from 'styled-components'
 import { styles } from '../utils'
 
@@ -20,6 +20,11 @@ export default class NavbarIcons extends Component {
         id: 3,
         icon: <FaInstagram className="icon instagram-icon" />,
         path: `https://www.instagram.com/tailu92503/`,
+      },
+      {
+        id: 4,
+        icon: <FaGithub className="icon github-icon" />,
+        path: `https://github.com/taislu`,
       },
     ],
   }
@@ -57,6 +62,9 @@ const IconWrapper = styled.div`
   }
   .instagram-icon {
     color: #da5f53;
+  }
+  .github-icon {
+    color: limegreen;
   }
   .icon:hover {
     color: ${styles.colors.mainYellow};
