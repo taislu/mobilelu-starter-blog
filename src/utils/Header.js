@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
-import img from '../images/homeBcg.jpeg'
+//import img from '../images/homeBcg.jpeg'
+import img from '../images/contact_bus.jpg'
 
 function HomeHeader({ img, children }) {
   return <IndexHeader img={img}>{children}</IndexHeader>
@@ -20,7 +21,7 @@ const IndexHeader = styled.header`
 //const DefaultHeader = styled(IndexHeader)`
 const DefaultHeader = styled.header`
   min-height: 60vh;
-  background: url(${props => props.img}) center/100% 100% fixed;
+  background: url(${props => props.img}) center/cover fixed;
   display: flex;
   justify-content: center;
   align-items: center;
