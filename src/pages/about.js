@@ -2,7 +2,7 @@ import React from 'react'
 import NavLayout from '../components/NavLayout'
 import SEO from '../components/seo'
 import { PageHeader, Banner } from '../utils'
-import img from '../images/about_tlu.jpg'
+import img from '../images/about_us1.jpg'
 
 import OurMission from "../info/our_mission"
 
