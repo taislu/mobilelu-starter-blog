@@ -41,18 +41,20 @@ Highly motivated and versatile web developer who is passionate about the creatio
 
 #### Freelancer
 
-**Tutor & Training** - _2018 - Present | Riverside, CA_
+**Tutor, Volunteer & Training** - _2018 - Present | Riverside, CA_
 
-- AWS Certified Solution Architect Associate (Feb 1, 2018)
-- AWS Certified Developer Associate (Mar 7, 2018)
-- AWS Certified SysOps Administration Associate (Apr 3, 2018)
-- MITx 6.00.1x : Introduction to Computer Science and Programming using Python (Apr 16, 2018)
-- UCSanDiego DSE200x : Python for Data Science (Jun 24, 2018)
-- Edureka : Automation Tester using Selenium (Aug 30, 2018)
-- HarvardX : CS50 Mobile App Development with React Native (Mar 7, 2019)
-- Edureka : ReactJS with Redux Certification (Jul 19, 2019)
+- Create serverless websites with Gatsby, React, JavaScript, and Styled-Components
+- Code Crafters tutor for [Epic Kids](https://www.epickidsprograms.com/)
+- Application developer for [IESD](https://iesd.com/)
 - Edureka : Node.js Developer Certificate (Aug 20, 2019)
-- Building serverless websites with Gatsby, React, JavaScript, and Styled-Components
+- Edureka : ReactJS with Redux Certification (Jul 19, 2019)
+- HarvardX : CS50 Mobile App Development with React Native (Mar 7, 2019)
+- Edureka : Automation Tester using Selenium (Aug 30, 2018)
+- UCSanDiego DSE200x : Python for Data Science (Jun 24, 2018)
+- MITx 6.00.1x : Introduction to Computer Science and Programming using Python (Apr 16, 2018)
+- AWS Certified SysOps Administration Associate (Apr 3, 2018)
+- AWS Certified Developer Associate (Mar 7, 2018)
+- AWS Certified Solution Architect Associate (Feb 1, 2018)
 
 #### Technical Architect
 
