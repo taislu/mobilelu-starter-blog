@@ -31,6 +31,8 @@ const getCategories = items => {
     });
     let tempCategories = new Set(tempItems); // filter out duplicate categories into set {}
     let categories = Array.from(tempCategories);
+    // skip private content
+    categories = categories.filter(category => category !== "Private")
     categories = ["All", ...categories];
   
     return categories;
@@ -118,12 +120,17 @@ handleItems = category => {
                   );
                 })}
         
-        <h4>{posts.length} Posts ( Sorted by Date )</h4>
+        
         {/* 
+        <h4>{posts.length} Posts ( Sorted by Date )</h4>
         <h4>{data.allMarkdownRemark.totalCount} Posts ( Sorted by Date )</h4>
         */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          // skip private content 
+          if(node.frontmatter.category === "Private"){
+            return null
+          }
           return (
             <article key={node.fields.slug}>
               <header>
