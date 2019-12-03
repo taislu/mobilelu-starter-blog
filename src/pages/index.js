@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
         <Bio />
       
         <h3>
-          <Link to="/posts-by-category">By Category</Link>
+          <Link to="/posts-by-category">By Category ( 分類別 )</Link>
           {/* 
           {data.allMarkdownRemark.totalCount} Posts ( Sorted by Date )
           */}
