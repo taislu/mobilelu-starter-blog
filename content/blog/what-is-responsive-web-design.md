@@ -7,8 +7,7 @@ category: CSS
 
 **Responsive web design** makes your web pages look good on all devices, uses only HTML and CSS, and is not a program or a JavaScript.
 
-<a href="https://www.w3schools.com/css/css_rwd_intro.asp"
-     target="_blank">Source : CSS Responsive Web Design Introduction</a>
+[CSS Responsive Web Design Introduction](https://www.w3schools.com/css/css_rwd_intro.asp)
 
 It is called **responsive web design** when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen.
 
@@ -24,7 +23,7 @@ Then, when we started surfing the internet using tablets and mobile phones, fixe
 
 HTML5 introduced a method to let web designers take control over the viewport, through the <**meta**> tag.
 
-```bash
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
@@ -40,7 +39,7 @@ It uses the **@media** rule to include a block of CSS properties only if a certa
 
 Example : 
 If the browser window is 600px or smaller, the background color will be lightblue:
-```bash
+```css
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
@@ -58,7 +57,7 @@ Instead of changing styles when the width gets smaller than 768px, we should cha
 
 There are tons of screens and devices with different heights and widths, so it is hard to create an exact breakpoint for each device. To keep things simple you could target five groups:
 
-```bash
+```css
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...}
 
@@ -83,7 +82,7 @@ You can have a set of CSS properties that will only apply when the browser windo
 
 Example : 
 The web page will have a lightblue background if the **orientation** is in landscape mode:
-```bash
+```css
 @media only screen and (orientation: landscape) {
   body {
     background-color: lightblue;
@@ -95,7 +94,7 @@ The web page will have a lightblue background if the **orientation** is in lands
 
 If the **width** property is set to a percentage and the height is set to "auto", the image will be responsive and scale up and down.
 
-```bash
+```css
 img {
   width: 100%;
   height: auto;
@@ -106,7 +105,7 @@ img {
 
 If the **max-width** property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size.
 
-```bash
+```css
 img {
   max-width: 100%;
   height: auto;
@@ -118,7 +117,7 @@ img {
 Here we will show three different methods:
 
 1. If the **background-size** property is set to "**contain**", the background image will scale, and try to fit the content area. However, the image will keep its aspect ratio (the proportional relationship between the image's width and height)
-```bash
+```css
 div {
   width: 100%;
   height: 400px;
@@ -130,7 +129,7 @@ div {
 ```
 
 2. If the **background-size** property is set to "**100% 100%**", the background image will stretch to cover the entire content area
-```bash
+```css
 div {
   width: 100%;
   height: 400px;
@@ -142,7 +141,7 @@ div {
 ```
 
 3. If the **background-size** property is set to "**cover**", the background image will scale to cover the entire content area. Notice that the "cover" value keeps the aspect ratio, and some part of the background image may be clipped
-```bash
+```css
 div {
   width: 100%;
   height: 400px;

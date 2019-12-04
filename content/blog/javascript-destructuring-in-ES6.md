@@ -10,7 +10,7 @@ category: JavaScript
 **Destructuring assignment** is a cool feature that came along with **ES6**. Destructuring is a JavaScript expression that makes it possible to **unpack values from arrays, or properties from objects, into distinct variables**. That is, we can extract data from arrays and objects and assign them to variables.
 
 Imagine if we want extract data from an array. Previously, how will this be done?
-```
+```js
     var introduction = ["Hello", "I" , "am", "Sarah"];
     var greeting = introduction[0];
     var name = introduction[3];

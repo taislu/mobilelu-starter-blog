@@ -5,6 +5,6 @@ description: This is a custom description for SEO and Open Graph purposes, rathe
 category: Gatsby
 ---
 
-Gatsby is a static site generator (using React, CSS, and GraphQL) built with a plugin architecture. Use Gatsby for speed, security & development experience. Check out this short video by Zac Gordon!
+Gatsby is a static site generator (using React, CSS, and GraphQL) built with a plugin architecture. Use Gatsby for speed, security & development experience. Check out this short video by Zac Gordon!  
 
-<iframe width="220" height="110" src="https://www.youtube.com/embed/GuvAMcsoreI" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/GuvAMcsoreI" frameborder="0" allowfullscreen></iframe>

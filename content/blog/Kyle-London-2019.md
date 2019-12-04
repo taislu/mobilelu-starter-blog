@@ -7,7 +7,7 @@ category: Gatsby
 
 Keynote speech by Kyle Mathews, CEO and co-founder of Gatsby, from the Gatsby Days London conference on Sept. 30th, 2019 at the Congress Centre. 
 
-<iframe width="220" height="110" src="https://www.youtube.com/embed/UvO7h_KwgpE" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/UvO7h_KwgpE" frameborder="0" allowfullscreen></iframe>
 
 Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps. 
 -   It’s kind of like Creat React App – preconfigured toolchain for building React apps. 

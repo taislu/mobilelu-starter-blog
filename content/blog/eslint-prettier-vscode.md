@@ -12,7 +12,7 @@ What it does
 •	Lints + Fixes **React** via **eslint-config-airbnb**
 •	You can see all the [rules here](https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js)
 
-<iframe width="220" height="110" src="https://www.youtube.com/embed/lHAeK8t94as" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/lHAeK8t94as" frameborder="0" allowfullscreen></iframe>
 
 **Local Install**
 ```bash

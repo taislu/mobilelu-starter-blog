@@ -5,9 +5,7 @@ description: For the past four years, the blog had been running on WordPress. It
 category: Gatsby
 ---
 
-<a href="https://www.gatsbyjs.org/blog/2019-03-21-migrating-from-wordpress-to-gatsby/"
-     target="_blank">Source : Migrating from WordPress to Gatsby</a>
-
+[Migrating from WordPress to Gatsby](https://www.gatsbyjs.org/blog/2019-03-21-migrating-from-wordpress-to-gatsby/)
 
 On September 24th, 2015, I wrote my first article on taniarascia.com, which was a custom, self-hosted WordPress theme. I discovered Git, I discovered WordPress, and I made 1,039 commits to the theme, in which I obsessively designed and redesigned the site.
 
@@ -24,13 +22,13 @@ However, I realized that a static site generator like <strong>Gatsby</strong> ut
 
 Since I primarily write JavaScript these days, I wanted an SSG that runs on Node.js, and if it uses React, even better. I tested out a few sites that run on Gatsby and yeah - they were fast. Blazingly fast.
 
-<strong>A few things I really like about Gatsby</strong><br>
-<strong>No page reloads</strong> - this site is now a SPA (single page app), and clicking on any internal page from within the website doesn’t need to load a completely new resource<br>
-<strong>Image optimization</strong> - all the images are automatically stripped of metadata, optimized, resized, lazy-loaded, and compressed<br>
-<strong>Pre-fetch resources</strong> - Gatsby detects what links are available on a given page and loads that data into the cache<br>
-<strong>Bundling and minification</strong> - code is minified, bundled, and served<br>
-Server-side rendered, at build time - Gatsby builds optimized static assets, which can be hosted anywhere!<br>
-<strong>Articles are saved in beautiful Markdown</strong><br>
+<strong>A few things I really like about Gatsby</strong>    
+<strong>No page reloads</strong> - this site is now a SPA (single page app), and clicking on any internal page from within the website doesn’t need to load a completely new resource    
+<strong>Image optimization</strong> - all the images are automatically stripped of metadata, optimized, resized, lazy-loaded, and compressed    
+<strong>Pre-fetch resources</strong> - Gatsby detects what links are available on a given page and loads that data into the cache    
+<strong>Bundling and minification</strong> - code is minified, bundled, and served    
+Server-side rendered, at build time - Gatsby builds optimized static assets, which can be hosted anywhere!    
+<strong>Articles are saved in beautiful Markdown</strong>    
 
 Every time I push to the repo, the site gets automatically deployed (thanks to <strong>Netlify</strong>)
 Very little boilerplate code was necessary to get started with Gatsby. I just forked the <strong>Gatsby Advanced Starter</strong>, a very simple, minimalist, completely UI-free foundation after my own heart, and started working with it.
@@ -43,30 +41,30 @@ I’ve been putting off migrating to a static site for months and months, becaus
 If you’ve been thinking about moving your blog from WordPress to a static site but have been putting it off due to fear of how long it will take and how much work it will be, I highly recommend giving it a shot. I’ll give you the basics of what I did in case you also want to make the switch.
 
 First, I downloaded the XML from <strong>WordPress</strong> in the Tools -> Export section.
-I used the <strong>ExitWP</strong> tool to convert the XML to Markdown. This did about 50% of the work of converting the posts.<br>
+I used the <strong>ExitWP</strong> tool to convert the XML to Markdown. This did about 50% of the work of converting the posts.    
 I converted tables to Markdown with the <strong>HTML to Markdown Table Converter</strong>.
 I <strong>manually</strong> indented all code blocks, converted all four-indent spaced code blocks to GitHub style fenced codeblocks, and fixed all the broken lists.
 I used <strong>Prettier</strong> on all the Markdown files to try to make them consistent. 
 
-Here is a little snippet I used to run Prettier on all the posts:<br>
-Copy code to clipboard<br>
-npm i -g prettier # install prettier globally<br>
-cd content/posts  # move to the directory that contains all your posts<br>
-<strong>prettier</strong><br>
-  --print-width 100<br>
-  --no-semi<br>
-  --single-quote<br>
-  --jsx-single-quote<br>
-  --trailing-comma es5<br>
-  --arrow-parens avoid<br>
-  --parser "markdown"  "**/*.md" # modify this based on whether your posts are in individual folders or not<br>
+Here is a little snippet I used to run Prettier on all the posts:    
+Copy code to clipboard    
+npm i -g prettier # install prettier globally    
+cd content/posts  # move to the directory that contains all your posts    
+<strong>prettier</strong>    
+  --print-width 100    
+  --no-semi    
+  --single-quote    
+  --jsx-single-quote    
+  --trailing-comma es5    
+  --arrow-parens avoid    
+  --parser "markdown"  "**/*.md" # modify this based on whether your posts are in individual folders or not    
 
-- I had to re-write all the styles now that the site wasn’t using any WordPress classes, which I did using my Sass boilerplate/CSS framework Primitive.<br>
-- I pulled in all the images from wp-content/uploads to the images folder.<br>
-- I used some regex to delete all WordPress thumbnails, e.g. all images that end in 150x150, 300x300 and 1024px1024px or any variation thereof, then I did a find/replace all to make sure all files were linking to ../images/file.ext instead of wp-content/uploads/file.ext.<br>
-- I manually saved all my thumbnails and moved them to a thumbnails folder so I could reuse them easily across multiple posts.<br>
-- I created a new night mode using React Context API as a wrapper.<br>
-- I migrate all comments from WordPress to Disqus with the Disqus manual importer.<br>
+- I had to re-write all the styles now that the site wasn’t using any WordPress classes, which I did using my Sass boilerplate/CSS framework Primitive.    
+- I pulled in all the images from wp-content/uploads to the images folder.    
+- I used some regex to delete all WordPress thumbnails, e.g. all images that end in 150x150, 300x300 and 1024px1024px or any variation thereof, then I did a find/replace all to make sure all files were linking to ../images/file.ext instead of wp-content/uploads/file.ext.    
+- I manually saved all my thumbnails and moved them to a thumbnails folder so I could reuse them easily across multiple posts.    
+- I created a new night mode using React Context API as a wrapper.    
+- I migrate all comments from WordPress to Disqus with the Disqus manual importer.    
 You can view the source of the completed website.
 
 From there it was just a matter of building out all the pages, learning enough <strong>GraphQL</strong> to make the proper queries, and doing a lot of small cleanup and tweaks.

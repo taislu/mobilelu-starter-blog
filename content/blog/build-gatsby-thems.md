@@ -7,7 +7,7 @@ category: Gatsby
 
 Gatsby Themes are the Next Big Thing™ for building web sites and apps. In this stream, [John Otander](https://twitter.com/4lpine) teaches [Jason Lengstorf](https://twitter.com/jlengstorf) how to build a Gatsby theme from scratch, how to use it, and how to create child themes. 
 
-<iframe width="220" height="110" src="https://www.youtube.com/embed/PS2784YfPpw" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/PS2784YfPpw" frameborder="0" allowfullscreen></iframe>
 
 <strong>What’s MDX?</strong>
 
@@ -21,7 +21,7 @@ When using MDX you can also import other MDX documents and render them as compon
 
 Importing and JSX syntax works just like it does in your components. This results in a seamless experience for developers and content authors alike. Markdown and JSX are included alongside each other like this:
 
-```bash
+```js
 import { Chart } from '../components/chart'
 # Here’s a chart
 The chart is rendered inside our MDX document.

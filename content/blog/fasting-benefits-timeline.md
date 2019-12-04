@@ -7,9 +7,9 @@ category: Fasting
 
 **What Happens to Your Body When You Fast - Hour by Hour Breakdown**
 
-<iframe width="220" height="110" src="https://www.youtube.com/embed/mjNChGkQLRo" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/mjNChGkQLRo" frameborder="0" allowfullscreen></iframe>
 
-TIMELINE: <br>
+TIMELINE:     
 - 02:03 What happens when you take food out of the equation 
 - 02:24 There's a big insulin spike when you a high carb meal 
 - 03:20 **12 hrs of fasting - Growth hormone kicks in** 

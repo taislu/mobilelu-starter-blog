@@ -10,7 +10,7 @@ category: JavaScript
 JavaScript variables can belong to the local or global scope. **Global variables can be made local (private) with closures**.
 
 A function can access all variables defined inside the function, like this:
-```
+```js
 function myFunction() {
   var a = 4;
   return a * a;

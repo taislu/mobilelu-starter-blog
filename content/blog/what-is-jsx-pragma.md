@@ -5,12 +5,12 @@ description: A pragma is a compiler directive. It tells the compiler how it shou
 category: Gatsby
 ---
 
-<a href="https://www.gatsbyjs.org/blog/2019-08-02-what-is-jsx-pragma/"
-     target="_blank">Source : What is JSX Pragma</a>
+
+[What is JSX Pragma](https://www.gatsbyjs.org/blog/2019-08-02-what-is-jsx-pragma/)
 
 If you’re looking into using [Theme UI](https://theme-ui.com/) , you’ll come across some (potentially) unfamiliar looking syntax:
 
-```bash
+```js
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 ```
@@ -31,13 +31,13 @@ Most React-based frameworks (like Gatsby), come with tooling already set up to s
 
 Take the following JSX, for example:
 
-```bash
+```js
 const element = <h1 className="greeting">Hello, world!</h1>
 ```
 
 That JSX syntax compiles to a call to React.createElement, like this:
 
-```bash
+```
 const element = React.createElement(
   "h1",
   { className: "greeting" },
@@ -61,7 +61,7 @@ Changing the function in the <strong>Babel plugin</strong> will transform all JS
 This method will not work with [Create React App](https://github.com/facebook/create-react-app) or other projects that do not allow custom babel configurations. Use the JSX Pragma method instead.
 
 <strong>.babelrc</strong>
-```bash
+```
 {
   "presets": ["@emotion/babel-preset-css-prop"]
 }

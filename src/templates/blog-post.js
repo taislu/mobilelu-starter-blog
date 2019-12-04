@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import ReactMarkdown from "react-markdown"
+import CodeBlock from "./code-block1"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -38,7 +40,18 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
+          <section>
+              <ReactMarkdown
+                source={post.rawMarkdownBody}
+                escapeHtml={false}
+                renderers={{
+                  code: CodeBlock,
+                }}
+              />
+          </section>
+          {/* 
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          */}
           <hr
             style={{
               marginBottom: rhythm(1),
@@ -94,6 +107,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      rawMarkdownBody
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
