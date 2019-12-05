@@ -24,8 +24,15 @@ category: CheatSheet
 | Strikethrough | ~~The world is flat.~~ \~\~ |
 |Task List |  - [x\]  Write the press release |
 
-
-### Embed youtube video ###
+```
+---
+title: "Markdown Cheatsheet"
+date: "2019-12-04"
+description: A quick reference to the Markdown syntax
+category: CheatSheet
+---
+```
+**Embed youtube video**
 
 ```html
 <iframe width="100%" src="https://www.youtube.com/embed/mjNChGkQLRo" frameborder="0" allowfullscreen></iframe>
