@@ -7,7 +7,7 @@ category: React
 
 **React 16.8.0** is the first release to support Hooks. When upgrading, don’t forget to update all packages, including React DOM. React Native supports Hooks since the **0.59 release of React Native**.
 
-At **React Conf 2018**, Sophie Alpert (at 00:01:55) and Dan Abramov (at 00:11:28) introduced Hooks, followed by Ryan Florence demonstrating how to refactor an application to use them. Watch the video here:
+At **React Conf 2018**, Sophie Alpert (at 00:01:55) and Dan Abramov (at 00:11:28) introduced Hooks, followed by Ryan Florence (at 01:01:11) demonstrating how to refactor an application to use them. Watch the video here:
 
 <iframe width="100%" src="https://www.youtube.com/embed/dpw9EHDh2bM" frameborder="0" allowfullscreen></iframe>
 
