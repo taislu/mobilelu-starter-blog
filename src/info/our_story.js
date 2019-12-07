@@ -21,7 +21,7 @@ export default class OurStory extends Component {
           <p className="text">
             This site was started by using <a href="https://github.com/gatsbyjs/gatsby-starter-blog">Gatsby's blog starter</a> which has the code in place for all audit improvement. The initial website looks like <a href="https://gatsby-starter-blog-demo.netlify.com/">this</a>.
           </p>
-          <img src={imgAudit} alt="lighthouse audit" height="600" width="600"></img>
+          <img src={imgAudit} alt="lighthouse audit" height="450" width="600"></img>
           <p className="text">
             In the past, I used text editors (ex: ms-word on computer, notes on iphone) often to store the article, youtube links, study notes etc. Now I'm writing the markdown files and publish them to <a href="github">github</a> (which will trigger a rebuild on netlify to refresh the site live) on a daily basis . So I can look for the information I need anytime online.
           </p>
