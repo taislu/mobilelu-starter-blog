@@ -4,16 +4,18 @@ import SEO from '../components/seo'
 import { PageHeader, Banner } from '../utils'
 import img from '../images/about_us1.jpg'
 
-import OurMission from "../info/our_mission"
+//import OurMission from "../info/our_mission"
+import OurStory from "../info/our_story"
 
 export default function about() {
   return (
     <NavLayout>
       <SEO title="About" />
       <PageHeader img={img}>
-        <Banner title="about us" subtitle="a little about us" />
+        <Banner title="about me" subtitle="a little about me" />
       </PageHeader>
-      <OurMission />
+      {/* <OurMission /> */}
+      <OurStory />
     </NavLayout>
   )
 }
