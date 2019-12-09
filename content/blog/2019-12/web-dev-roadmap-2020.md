@@ -1,5 +1,5 @@
 ---
-title: "Web Dev Roadmap 2020"
+title: "Web Full-Stack Dev Roadmap 2020"
 date: "2019-12-02"
 description: This web dev roadmap will help guide you in deciding what technology and languages you should learn about in 2020. 
 category: Trend
