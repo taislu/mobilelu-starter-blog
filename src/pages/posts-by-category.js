@@ -35,7 +35,7 @@ const getCategories = items => {
     // skip private content
     categories = categories.filter(category => category !== "Private")
     categories.sort()
-    categories = ["ALL", ...categories];
+    categories = ["All", ...categories];
   
     return categories;
   };
