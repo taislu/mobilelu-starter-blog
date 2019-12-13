@@ -20,18 +20,11 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
-
-/* gatsby-styled-components-dark-mode 
-   Any component wrapped in a styled or css has access to your theme!
-*/
-
 body {
   font-family: 'Open Sans', sans-serif;
-  /*color:#262626;*/   /* gray */
+  color:#262626;   /* gray */
   /*color:#263826;*/   /* green https://www.w3schools.com/colors/colors_hexadecimal.asp */
-  /*background:#fff;*/ /* white */
-  color: ${props => props.theme.isDark ? "#ffffff" : "#262626"};
-  background: ${props => props.theme.isDark ? "#262626" : "#ffffff"};
+  background:#fff; /* white */
 }
 `
 

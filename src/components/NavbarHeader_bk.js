@@ -1,17 +1,11 @@
-import React, {useContext} from 'react'
+import React from 'react'
+
 //import logo from './logo_java.svg'
 import { FaAlignRight } from 'react-icons/fa'
 import styled from 'styled-components'
 import { styles } from '../utils'
 
-// toggle night mode
-import { ThemeManagerContext } from "gatsby-styled-components-dark-mode"
-import { Toggle } from "react-toggle-component"
-
 export default function NavbarHeader({ handleNavbar }) {
-
-  const themeContext = useContext(ThemeManagerContext)
-
   return (
     <HeaderWrapper>
       {/* 
@@ -25,16 +19,6 @@ export default function NavbarHeader({ handleNavbar }) {
           handleNavbar()
         }}
       />
-      {/* toggle night mode */}
-      <Toggle
-        leftBackgroundColor="black"
-        rightBackgroundColor="white"
-        borderColor="black"
-        knobColor="tomato"
-        name="toggle-3"
-        onToggle={() => themeContext.toggleDark()}
-      />
-
     </HeaderWrapper>
   )
 }
