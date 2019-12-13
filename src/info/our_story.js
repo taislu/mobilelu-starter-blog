@@ -43,7 +43,7 @@ const QuickInfoWrapper = styled.div`
   margin: 2rem auto;
   .text {
     line-height: 2em;
-    color: ${styles.colors.mainGrey};
+    /*color: ${styles.colors.mainGrey};*/
     word-spacing: 0.2rem;
   }
 
