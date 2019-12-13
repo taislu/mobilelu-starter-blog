@@ -19,10 +19,13 @@ const Navbar = () => {
       <NavbarIcons />
     </NavWrapper>
   )
-  
 }
 
 const NavWrapper = styled.nav`
+  background: white;
+  position: sticky;
+  top: 0;
+  
   @media (min-width: 768px) {
     display: flex;
     align-items: center;

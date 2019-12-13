@@ -22,8 +22,9 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  color:#262626;
-  background:#fff;
+  color:#262626;   /* gray */
+  /*color:#263826;*/   /* green https://www.w3schools.com/colors/colors_hexadecimal.asp */
+  background:#fff; /* white */
 }
 `
 
