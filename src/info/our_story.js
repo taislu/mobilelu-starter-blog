@@ -23,10 +23,10 @@ export default class OurStory extends Component {
           </p>
           <img src={imgAudit} alt="lighthouse audit" height="450" width="600"></img>
           <p className="text">
-            In the past, I used text editors (ex: ms-word on computer, notes on iphone) often to store the article, youtube links, study notes etc. Now I'm writing the markdown files and publish them to <a href="github">github</a> (which will trigger a rebuild on netlify to refresh the site live) on a daily basis . So I can look for the information I need anytime online.
+            In the past, I used text editors (ex: ms-word on computer, notes on iphone) often to store the articles, youtube links, study notes etc. Now I can put the data into the markdown files and publish them to <a href="github">github</a> (which will trigger a rebuild on netlify to refresh the site live) on a daily basis . So I can look for the information I need anytime online.
           </p>
           <p className="text">
-            To make improvement on the site, I have added several new features (so far) including <a href="https://www.taislu.com/posts-by-category">markdown display by categories</a>, Navigation bar with addition pages, and markdown renderers for codeblock etc. You may find something interesting posted on <a href="https://www.taislu.com/">my site</a> one day !.
+            To make improvement on the site, I have added several new features (so far) including <a href="https://www.taislu.com/posts-by-category">markdown display by categories</a>, Navigation bar with addition pages, markdown renderers for codeblock, and sticky Navbar etc. You may find something interesting posted on <a href="https://www.taislu.com/">my site</a> one day !.
           </p>
           <Link to="/" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>home</SectionButton>
