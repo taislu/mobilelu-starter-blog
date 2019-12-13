@@ -8,6 +8,8 @@ import { rhythm, scale } from "../utils/typography"
 import ReactMarkdown from "react-markdown"
 import CodeBlock from "./code-block1"
 
+import NavLayout from '../components/NavLayout'
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -15,6 +17,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
+      <NavLayout>
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
@@ -89,6 +92,7 @@ class BlogPostTemplate extends React.Component {
           </ul>
         </nav>
       </Layout>
+      </NavLayout>
     )
   }
 }
