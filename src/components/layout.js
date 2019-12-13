@@ -1,15 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+//import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 //import Navbar from "./Navbar"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
+    //const { location, title, children } = this.props
+    const { children } = this.props
+    //const rootPath = `${__PATH_PREFIX__}/`
+    //let header
+    /*
     if (location.pathname === rootPath) {
       header = (
         <h2
@@ -48,6 +50,7 @@ class Layout extends React.Component {
         </h3>
       )
     }
+    */
     return (
       <React.Fragment>
         {/* <Navbar /> */}
