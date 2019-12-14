@@ -27,8 +27,8 @@ export default function NavbarHeader({ handleNavbar }) {
       />
       {/* toggle night mode */}
       <Toggle
-        leftBackgroundColor="black"
-        rightBackgroundColor="white"
+        leftBackgroundColor={themeContext.isDark ? "white" : "black" }
+        rightBackgroundColor={themeContext.isDark ? "white" : "black" }
         borderColor="black"
         knobColor="tomato"
         name="toggle-3"
