@@ -2,7 +2,7 @@
 title: "Add dark mode using gatsby-styled-components-dark-mode plugin"
 date: "2019-12-14"
 description: A quick reference to add dark/ligt switch with styled components, react toggle component, and gatsby-styled-components-dark-mode plugin
-category: Tutorial
+category: Playground
 ---
 
 ### Create a new site using gatsby default starter
