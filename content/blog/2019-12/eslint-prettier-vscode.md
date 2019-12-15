@@ -2,7 +2,7 @@
 title: "ESLint + Prettier + VS Code — The Perfect Setup"
 date: "2019-12-01"
 description: Lints + Fixes React via eslint-config-airbnb
-category: VSCode
+category: ESLint
 ---
 
 What it does
