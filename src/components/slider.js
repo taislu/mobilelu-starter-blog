@@ -19,12 +19,13 @@ const Slider = () => {
     }, [index]);
 /* eslint-enable */
     return(
+      
         <Gallery
             style={{
                 height: "100%",
                 width: "100%",
                 marginLeft: "auto",
-                marginRight: "auto"
+                marginRight: "auto",
             }}
             index={index}
             onRequestChange={i => {
@@ -35,7 +36,7 @@ const Slider = () => {
                 <GalleryImage objectFit="contain" key={index} src={image} />
             ))}
         </Gallery>
-
+      
     )
 }
 

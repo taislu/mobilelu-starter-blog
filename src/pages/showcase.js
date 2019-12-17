@@ -9,6 +9,7 @@ export default function showcase() {
   return (
     <NavLayout>
       <SEO title="Showcase" />
+      
       <PageHeader img={img}>
         <Banner title="showcase" subtitle="my certification & projects" />
       </PageHeader>
