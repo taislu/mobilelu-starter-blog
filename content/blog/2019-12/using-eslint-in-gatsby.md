@@ -45,3 +45,19 @@ Note: When there is no ESLint file **Gatsby implicitly adds a barebones ESLint l
 ### Disabling ESLint
 
 **Creating an empty .eslintrc file at the root of your project will disable ESLint for your site**. The empty file will disable the built-in eslint-loader because Gatsby assumes once you have an ESLint file you are in charge of linting.
+
+Use **eslint-disable** and **eslint-enable** to disable eslint for a block of code.
+```
+/* eslint-disable */
+    React.useEffect(() => {
+        const timer = setInterval(() => {
+
+        if (index === images.length-1) setInc(-1)
+        if (index === 0) setInc(1)
+        setIndex(prev => prev + inc);
+        
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [index]);
+/* eslint-enable */
+```
