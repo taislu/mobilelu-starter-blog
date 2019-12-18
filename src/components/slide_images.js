@@ -11,6 +11,11 @@ const images = [
 ]
 */
 
+// 0.66
+// 1000 x 660
+// 1356 x 898
+// 1500 x 990
+
 const images = [
     "https://images.unsplash.com/photo-1559666126-84f389727b9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1356&q=80",
     "https://images.unsplash.com/photo-1557389352-e721da78ad9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
