@@ -46,7 +46,7 @@ function add() {
   return counter;
 }
 ```
-###JavaScript Closures###
+### JavaScript Closures
 
 Remember **self-invoking functions**? What does this function do?
 ```
