@@ -40,6 +40,7 @@
     "react-toggle-component": "^3.0.8",
     "react-typography": "^0.16.19",
     "styled-components": "^4.4.1",
+    "typeface-lato": "0.0.75",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
