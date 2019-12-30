@@ -26,7 +26,7 @@ export default class OurStory extends Component {
             In the past, I used text editors (ex: ms-word on computer, notes on iphone) often to store the articles, youtube links, study notes etc. Now I can put the data into the markdown files and publish them to <a href="github">github</a> (which will trigger a rebuild on netlify to refresh the site live) on a daily basis . So I can look for the information I need anytime online.
           </p>
           <p className="text">
-            To make this site more interesting, I have added several new features (so far) including <a href="https://www.taislu.com/posts-by-category">markdown display by categories</a>, Navigation with additional pages, markdown renderers for codeblock, sticky Navbar, and dark/light mode switch etc. You may find something interesting posted on <a href="https://www.taislu.com/">my site</a> one day !.
+            To make this site more interesting, I have added several new features (so far) including <a href="https://www.taislu.com/posts-by-category">markdown display by categories</a>, Navigation with additional pages, markdown renderers for codeblock, sticky Navbar, button with ripple effects, and dark/light mode switch etc. You may find something interesting posted on <a href="https://www.taislu.com/">my site</a> one day !.
           </p>
           <Link to="/" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>home</SectionButton>

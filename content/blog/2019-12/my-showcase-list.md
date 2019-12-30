@@ -19,6 +19,7 @@ Here is a summary of the list :
 - Added Sticky Navbar which always shows on top while scrolling the content
 - Added Dark Mode with the plugin gatsby-styled-components-dark-mode
 - Changed fonts using npm packages (such as typeface-lato)    
+- Added the ripple effects on button hovering
 
 ### A Photo Site
 
