@@ -18,11 +18,19 @@ const Button = styled.button`
   padding: 0.25em 1em;
   border: 2px solid palevioletred;
   border-radius: 3px;
-  /* 
-  &:hover{
-    background: tomato;
+  
+  background-position: center;
+  transition: background 0.5s;
+
+  &:hover {
+     background: darkseagreen radial-gradient(circle, transparent 1%, darkseagreen 1%) center/15000%;
   }
-  */
+  &:active {
+    background-color: yellow;
+    background-size: 100%;
+    transition: background 0s;
+  }
+
 `;
 
 
