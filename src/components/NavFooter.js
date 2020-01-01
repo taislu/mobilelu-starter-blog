@@ -40,7 +40,7 @@ export default class Footer extends Component {
             </a>
           ))}
         </div>
-        <p className="copyright">copyright &copy; 2019 taislu</p>
+        <p className="copyright">copyright &copy; {new Date().getFullYear()} taislu</p>
       </FooterWrapper>
     )
   }
