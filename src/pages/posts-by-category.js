@@ -19,6 +19,7 @@ const Button = styled.button`
   border: 2px solid palevioletred;
   border-radius: 3px;
   
+  /* ripple effect */
   background-position: center;
   transition: background 0.5s;
 
