@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { styles } from '.'
+
+import { MoveInRight, MoveInLeft } from "./animation-move"
+
 export function Title({ title, message }) {
   return (
     <TitleWrapper>
@@ -22,11 +25,13 @@ const TitleWrapper = styled.div`
     ${styles.letterSpacing({ spacing: '0.3rem' })};
     font-size: 2rem;
     color: ${styles.colors.mainYellow};
+    /*animation: 1s ${MoveInLeft} ease-out;*/
   }
   h1 {
     ${styles.letterSpacing({ spacing: '0.3rem' })};
     font-size: 2rem;
     text-transform: uppercase;
+    /*animation: 1s ${MoveInRight} ease-out;*/
   }
   .underline {
     width: 5rem;

@@ -8,6 +8,13 @@ import { rhythm } from "../utils/typography"
 
 import NavLayout from '../components/NavLayout'
 
+import styled from 'styled-components';
+import { MoveInLeft } from "../utils/animation-move"
+
+const MIL = styled.div`
+  animation: 1s ${MoveInLeft} ease-out;    
+`
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -19,13 +26,19 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-      
+        <MIL>
+        <Link to="/posts-by-category">By Category ( 分類別 )</Link>
+        </MIL>
+          
+        
+{/* 
         <h3>
           <Link to="/posts-by-category">By Category ( 分類別 )</Link>
-          {/* 
+          
           {data.allMarkdownRemark.totalCount} Posts ( Sorted by Date )
-          */}
+          
         </h3>
+*/}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           // skip private content 

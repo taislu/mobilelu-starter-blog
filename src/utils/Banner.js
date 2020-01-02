@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { styles } from '../utils'
 
+import { MoveInRight, MoveInLeft } from "./animation-move"
+
 export const Banner = ({ title, subtitle, children }) => {
   return (
     <BannerWrapper>
@@ -20,6 +22,7 @@ const BannerWrapper = styled.div`
     font-size: 3rem;
     text-transform: uppercase;
     ${styles.letterSpacing({ spacing: '0.75rem' })};
+    animation: 1s ${MoveInLeft} ease-out;
   }
   h3 {
     color: ${styles.colors.mainWhite};
@@ -27,6 +30,7 @@ const BannerWrapper = styled.div`
     ${styles.letterSpacing({ spacing: '0.15rem' })};
     font-size: 1.5rem;
     text-transform: capitalize;
+    animation: 1s ${MoveInRight} ease-out;
   }
 `
 Banner.defaultProps = {

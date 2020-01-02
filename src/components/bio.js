@@ -11,6 +11,17 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
+import styled from 'styled-components';
+import { MoveInBottom, MoveInRight } from "../utils/animation-move"
+
+const MIB = styled.div`
+  animation: 1s ${MoveInBottom} ease-out;    
+`
+
+const MIR = styled.div`
+  animation: 1s ${MoveInRight} ease-out;    
+`
+
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -40,6 +51,8 @@ const Bio = () => {
         marginBottom: rhythm(0.1),
       }}
     >
+      
+      <MIB>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
@@ -53,13 +66,17 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+      </MIB>
+
+      <MIR>
       <p>
-        Posted by <strong>{author}</strong> who lives and works in Riverside, California building useful things.
-        {` `}
+        Posted by <strong>{author}</strong> who's building useful things.
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a>
       </p>
+      </MIR>
+      
     </div>
   )
 }
