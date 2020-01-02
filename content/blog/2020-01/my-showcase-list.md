@@ -20,6 +20,7 @@ Here is a summary of the list :
 - Added Dark Mode with the plugin gatsby-styled-components-dark-mode
 - Changed fonts using npm packages (such as typeface-lato)    
 - Added the ripple effects on button hovering
+- Added contact form with a serverless backend [Formspree](https://formspree.io/) 
 
 ### A Photo Site
 

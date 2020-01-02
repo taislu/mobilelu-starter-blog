@@ -21,10 +21,13 @@ const IndexHeader = styled.header`
 //const DefaultHeader = styled(IndexHeader)`
 const DefaultHeader = styled.header`
   min-height: 60vh;
-  background: url(${props => props.img}) center/cover fixed;
+  /*background: url(${props => props.img}) center/cover fixed;*/
+  background: url(${props => props.img}) center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
 `
 // background values : contain, 100%, cover
 

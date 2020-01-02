@@ -39,6 +39,9 @@ export default class OurStory extends Component {
 }
 
 const QuickInfoWrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   width: 90%;
   margin: 2rem auto;
   .text {

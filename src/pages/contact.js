@@ -4,6 +4,8 @@ import SEO from '../components/seo'
 import { PageHeader, Banner } from '../utils'
 import img from '../images/contact_bus2.jpg'
 
+import Contact from "../components/Contact"
+
 export default function contact() {
   return (
     <NavLayout>
@@ -11,6 +13,7 @@ export default function contact() {
       <PageHeader img={img}>
         <Banner title="contact us" subtitle="Send us a message" />
       </PageHeader>
+      <Contact />
     </NavLayout>
   )
 }
