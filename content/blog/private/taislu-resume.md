@@ -15,7 +15,9 @@ Highly motivated and versatile web developer who is passionate about the creatio
 
 ## Showcases
 
+- [Photo App using Gatsby and DatoCMS on Netlify](https://taislu-trips.netlify.com/) - Live
 - [Blog App using Gatsby and Markdown on Netlify](https://taislu.com) - Live 
+- [Tours App using Gatsby and Contentful on Surge](http://taislu-tours.surge.sh/) - Live
 - [Coffee-shop App using Gatsby, Contentful and Snipcart](https://mobilelu-coffee-shop.netlify.com/) Live
 - [Latest News App using Node and EJS on Heroku](http://taislu-media-cust.herokuapp.com/) - Live but may take a few seconds for Heroku to start the web server.
 - [React Redux Shopping Cart with Express demo](https://www.youtube.com/watch?v=67EzkUE2Pt8) - Youtube

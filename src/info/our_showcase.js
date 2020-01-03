@@ -48,7 +48,7 @@ export default class OurShowcase extends Component {
           
           <p>
           <ul>
-            <li>Lerned markdown syntax & the practice to write something everyday</li>
+            <li>Learned markdown syntax & the practice to write something everyday</li>
             <li>Added markdown filtering by categories</li>
             <li>Added separate renderer for code blocks/syntax high lighting</li>
             <li>Added Navigation with additional pages</li>
