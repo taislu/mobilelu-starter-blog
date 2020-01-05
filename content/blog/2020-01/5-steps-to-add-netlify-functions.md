@@ -2,7 +2,7 @@
 title: "Five Steps to add Netlify Functions to Gatsby"
 date: "2020-01-03"
 description: Turning the Static Dynamic - Gatsby + Netlify Functions + Netlify Identity
-category: Gatsby
+category: Lambda
 ---
 
 [Turning the Static Dynamic - Gatsby + Netlify Functions + Netlify Identity](https://www.gatsbyjs.org/blog/2018-12-17-turning-the-static-dynamic/)
@@ -90,8 +90,6 @@ export function handler(event, context, callback) {
   })
 }
 
-```
-
 Now you are ready to access this **API** from anywhere in your Gatsby app! For example, in any event handler or lifecycle method, insert:
 ```js
 fetch("/.netlify/functions/hello")
@@ -101,8 +99,42 @@ fetch("/.netlify/functions/hello")
 
 The local proxying we are doing is only for local emulation, e.g. it is actually running from http://localhost:9000/hello despite you hitting /.netlify/functions/hello in your Gatsby app. When you deploy your site to Netlify (either by **hooking your site up through Git through our Web UI**, or our l33t [new CLI](https://docs.netlify.com/cli/get-started/) ), that falls away, and your functions -are- hosted on the same URL and “just works”. Pretty neat!
 
-### That’s cool, but its not an app
+#### An example to call lambda function with button onClick
 
-So, yes, your site can now be more **dynamic** than any static site. **It can hit any database or API**. It runs rings around CORS (by the way, you can also use [Netlify Redirects](https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file) for that). But its not an app app. Yet!
+```js
+import React, {useState} from 'react'
+const LambdaButton = () => {
+    const [data, setData] = useState(null)
+    const [error, setError] = useState(null)
 
-The key thing about web apps (and, let’s face it, the key thing users really pay for) is they all have some concept of user, and that brings with it all manner of complication from security to state management to [role-based access control](https://docs.netlify.com/visitor-access/role-based-access-control/). **Entire routes need to be guarded by authentication, and sensitive content shielded from Gatsby’s static generation**. Sometimes there are things you -don’t- want Google’s spiders to see!
+    const handleClick = async (event) => {
+        event.preventDefault();
+        //console.log("Button Clicked !")
+        const url = "/.netlify/functions/hello"
+        const options = {}
+        try{
+            const res = await fetch(url, options)
+            const json = await res.json()
+            setData(json.msg)
+            setError(null)
+        } catch(error){
+            setError(error)
+            setData(null)
+        }
+    }
+
+    return(
+        <div>
+            <button 
+                style={{backgroundColor:"tomato"}}
+                onClick={handleClick}
+            >
+                Hello-API-Call
+            </button>
+            <pre>{ error? error : data }</pre>
+        </div>
+    )
+}
+
+export default LambdaButton
+```
