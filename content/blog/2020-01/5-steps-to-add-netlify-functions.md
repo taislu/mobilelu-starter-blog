@@ -2,7 +2,7 @@
 title: "Five Steps to add Netlify Functions to Gatsby"
 date: "2020-01-03"
 description: Turning the Static Dynamic - Gatsby + Netlify Functions + Netlify Identity
-category: Lambda
+category: Netlify
 ---
 
 [Turning the Static Dynamic - Gatsby + Netlify Functions + Netlify Identity](https://www.gatsbyjs.org/blog/2018-12-17-turning-the-static-dynamic/)
