@@ -167,3 +167,34 @@ Entrypoint hello-world-basic = hello-world-basic.js
 ........
     + 39 hidden modules  
 **Lambda server is listening on 9000**  
+
+**fetch-unsplash.js**
+
+```js
+// Add environment variables via Netlify dashboard
+require('dotenv').config()
+import axios from "axios"
+
+exports.handler = async (event, context) => {
+
+    const accessKey = process.env.Unsplash_Access_Key
+    const collectionIDs = "3334461,8187675,2710702"
+    const url = `https://api.unsplash.com/photos/random?client_id=${accessKey}&count=${10}&collections=${collectionIDs}`
+
+    let response
+    try{
+        const res = await axios.get(url)
+        //response = JSON.stringify(res.data)
+        response = JSON.stringify({ images: res.data})
+    }catch(error){
+        console.log("Error : ", error)
+        response = error
+    }
+    //console.log("response : ", response)
+
+    return{
+        statusCode: 200,
+        body: response
+    }
+}
+```
