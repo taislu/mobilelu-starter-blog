@@ -7,6 +7,8 @@ category: Algorithm
 
 [Quick Sort](https://www.w3resource.com/javascript-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-1.php)
 
+Quicksort algorithm picks a pivot element, rearranges the array elements in such a way that all elements smaller than the picked pivot element move to left side of pivot, and all greater elements move to right side. Finally, the algorithm recursively sorts the subarrays on left and right of pivot element.
+
 Steps:   
 1. Remove the last item & use it as the **pivot** item.  
 2. Iterate and compare the array items with pivot : if equal or smaller, add the items to left. Otherwise, to the right array.  
