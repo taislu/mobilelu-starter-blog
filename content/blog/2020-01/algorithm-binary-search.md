@@ -9,6 +9,8 @@ category: Algorithm
 
 [Binary Search](https://www.geeksforgeeks.org/binary-search/) is searching technique which works on [Divide and Conquer approach](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/). It used to search any element in a **sorted array**. As compared to linear, binary search is much faster with Time Complexity of **O(logN)** whereas linear search algorithm works in **O(N)** time complexity.
 
+In each step, the algorithm compares the input element x with the value of the **middle element** in array. If the values match, return the index of middle. Otherwise, if x is less than the middle element, then the algorithm recurs for **left side** of middle element, else recurs for **right side** of middle element.
+
 ### Recursive Binary Search
 ```js
 const bs_recursive = (arr, target, start, end) => { 
