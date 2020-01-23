@@ -7,9 +7,10 @@ category: Codility
 
 [Frog Jump](https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/start/)
 
-Write a function:   
+**Write a function:**   
 function solution(X, Y, D);   
 that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal to or greater than Y.   
+
 For example, given:   
 X = 10 Y = 85 D = 30   
 the function should return 3, because the frog will be positioned as follows:   
