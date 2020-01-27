@@ -2,7 +2,7 @@
 title: "Make Money with a Website"
 date: "2019-12-04"
 description: Interested in making money with a website so you can earn an income online? 
-category: Money
+category: Freelance
 ---
 
 Interested in making money with a website so you can earn an income online? Then you DO NOT want to miss this video of how this website makes just 2 guys  (Jeff & Ben) over $150,000 a MONTH!
