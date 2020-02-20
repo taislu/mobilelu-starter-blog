@@ -152,6 +152,7 @@ netlify-lambda: Starting server
 Hash: 07f9f0851bc13b1d3fcf  
 Version: webpack 4.41.5  
 Time: 416ms  
+```
 Built at: 01/06/2020 11:15:46 PM  
                Asset      Size  Chunks             Chunk Names  
             fetch.js  32.6 KiB       0  [emitted]  fetch  
@@ -159,12 +160,13 @@ Built at: 01/06/2020 11:15:46 PM
        hello-post.js  1.26 KiB       2  [emitted]  hello-post  
 hello-world-async.js  2.17 KiB       3  [emitted]  hello-world-async  
 hello-world-basic.js  1.04 KiB       4  [emitted]  hello-world-basic  
+```
 Entrypoint fetch = fetch.js  
 Entrypoint hello-param = hello-param.js  
 Entrypoint hello-post = hello-post.js  
 Entrypoint hello-world-async = hello-world-async.js  
 Entrypoint hello-world-basic = hello-world-basic.js  
-........
+........    
     + 39 hidden modules  
 **Lambda server is listening on 9000**  
 
