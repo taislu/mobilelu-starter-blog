@@ -2,7 +2,7 @@
 title: "What is the JAM Stack"
 date: "2019-11-05"
 description: You may have already seen or worked on a JAMstack site! They do not have to include all attributes of JavaScript, APIs, and Markup. They might be built using by hand, or with Jekyll, Hugo, Nuxt, Next, Gatsby, or another static site generator...
-category: Stack
+category: Q&A
 ---
 
 [Create fast and secure sites and dynamic apps without web servers](https://jamstack.org/)
