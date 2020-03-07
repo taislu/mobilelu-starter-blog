@@ -1,7 +1,7 @@
 ---
 title: "Intro-to-Vue The Vue Instance"
 date: "2020-03-04"
-description: how to use Vue to display data onto a webpage
+description: How to use Vue to display data onto a webpage
 category: Vue
 ---
 
