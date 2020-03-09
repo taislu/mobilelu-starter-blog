@@ -1,7 +1,7 @@
 ---
 title: "Vue List Rendering"
 date: "2020-03-07"
-description: how to display lists onto our webpages with Vue
+description: How to display lists onto our webpages with Vue
 category: Vue
 ---
 
