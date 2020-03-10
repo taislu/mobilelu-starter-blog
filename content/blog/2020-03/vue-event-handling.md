@@ -17,16 +17,16 @@ cart: 0
 ```
 In our HTML, we’ll create a div for our cart. We’ll add a p inside it to display our cart data’s value.
 ```html
-                <div class="cart">
-                    <p>Cart( {{cart}} )</p>
-                </div>
+<div class="cart">
+    <p>Cart( {{cart}} )</p>
+</div>
 ```
 We’ll also make a button to add items to our cart.
 ```html
-                <!-- 
-                <button v-on:click="cart += 1">Add to Cart</button>
-                -->
-                <button v-on:click="addToCart">Add to Cart</button>
+<!-- 
+<button v-on:click="cart += 1">Add to Cart</button>
+-->
+<button v-on:click="addToCart">Add to Cart</button>
 ```
 As you can see, we’re using Vue’s **v-on** directive to increment the value of cart
 
@@ -36,11 +36,11 @@ Let’s dissect this syntax. We say v-on, which let’s Vue know we’re listeni
 
 This is simple, but not entirely realistic. Rather than using the expression cart += 1, let’s make the click trigger a method that increments the value of cart instead
 ```
-    methods: {
-        addToCart: function(){
-            this.cart += 1
-        },   
-    }
+methods: {
+    addToCart: function(){
+        this.cart += 1
+    },   
+}
 ```
 As you can see, addToCart is the name of a method that will fire when that click event happens. We haven’t yet defined that method, so let’s do that now, right on our instance.
 Just like it does for its data, the Vue instance has an optional property for methods. So we’ll write out our addToCart method within that option.
@@ -83,9 +83,9 @@ Notice that we’re passing v.variantImage in as an argument to our updateProduc
 
 Let’s build out that method.
 ```
-        updateProduct(productImage){
-            this.image = productImage
-        }
+updateProduct(productImage){
+    this.image = productImage
+}
 ```
 When it’s called, v.variantImage is passed in as productImage and is used to update the value of **this.image**. As we just learned, this.image is image. So the value of image is now dynamically updating based on the variant that was hovered on.
 
@@ -124,33 +124,33 @@ These are equivalent ways of saying the same thing.
 **index.html**
 ```html
 <div id="app">
-        <div class="product">
-            <div class="product-image">
-                <img :src="image" >  <!-- v-bind shorthand -->
+    <div class="product">
+        <div class="product-image">
+            <img :src="image" >  <!-- v-bind shorthand -->
+        </div>
+        <div class="product-info">
+            <h1>{{ product }}</h1>
+            <p v-if="inStock">In Stock</p>
+            <p v-else>Out of Stock</p>
+            <ul>
+                <li v-for="detail in details">{{detail}}</li>
+            </ul>
+            <!-- Add key for Vue to track list identity -->
+            <div v-for="v in variants" :key="v.variantId">
+                <p @mouseover="updateProduct(v.variantImage)">{{ v.variantColor }}</p>
             </div>
-            <div class="product-info">
-                <h1>{{ product }}</h1>
-                <p v-if="inStock">In Stock</p>
-                <p v-else>Out of Stock</p>
-                <ul>
-                    <li v-for="detail in details">{{detail}}</li>
-                </ul>
-                <!-- Add key for Vue to track list identity -->
-                <div v-for="v in variants" :key="v.variantId">
-                    <p @mouseover="updateProduct(v.variantImage)">{{ v.variantColor }}</p>
-                </div>
-                <!-- 
-                <button v-on:click="cart += 1">Add to Cart</button>
-                -->
-                <button v-on:click="addToCart">Add to Cart</button>
-                
-                <div class="cart">
-                    <p>Cart( {{cart}} )</p>
-                </div>
-                <button v-on:click="removeFromCart">Remove from Cart</button>
+            <!-- 
+            <button v-on:click="cart += 1">Add to Cart</button>
+            -->
+            <button v-on:click="addToCart">Add to Cart</button>
+            
+            <div class="cart">
+                <p>Cart( {{cart}} )</p>
             </div>
+            <button v-on:click="removeFromCart">Remove from Cart</button>
         </div>
     </div>
+</div>
 ```
 **main.js**
 ```
